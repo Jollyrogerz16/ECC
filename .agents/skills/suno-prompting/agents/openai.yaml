@@ -1,0 +1,7 @@
+interface:
+  display_name: "Suno Prompting"
+  short_description: "Custom Mode style, tags, Cover and Extend"
+  brand_color: "#F59E0B"
+  default_prompt: "Use $suno-prompting to write a Custom Mode style line and iteration plan."
+policy:
+  allow_implicit_invocation: true

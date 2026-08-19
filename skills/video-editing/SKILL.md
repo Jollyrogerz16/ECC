@@ -309,3 +309,5 @@ identify the 5 most engaging 30-second clips for social media."
 - `fal-ai-media` — AI image, video, and audio generation
 - `videodb` — Server-side video processing, indexing, and streaming
 - `content-engine` — Platform-native content distribution
+- `ai-music-production` — Finish the track before you cut a video to it
+- `taste` — visual direction for music videos and edits
