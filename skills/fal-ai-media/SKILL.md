@@ -287,3 +287,5 @@ models()
 - `videodb` — Video processing, editing, and streaming
 - `video-editing` — AI-powered video editing workflows
 - `content-engine` — Content creation for social platforms
+- `ai-music-production` — Full-song AI music pipeline when audio is the product, not a bed
+- `suno-prompting` — Suno Custom Mode craft for vocal singles

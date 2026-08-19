@@ -262,3 +262,4 @@ for project setup, audio track binding, and render flags.
 - `videodb` — server-side smart reframe and indexing for large footage
 - `content-engine` — platform-native distribution, covers, captions
 - `frontend-design-direction` — the same "decide a direction first" discipline, for UI
+- `ai-music-production` — lock the audio before you cut a video to it

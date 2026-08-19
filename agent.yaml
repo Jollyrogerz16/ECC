@@ -16,6 +16,7 @@ skills:
   - agentic-engineering
   - agentic-os
   - ai-first-engineering
+  - ai-music-production
   - ai-regression-testing
   - android-clean-architecture
   - api-design
@@ -98,9 +99,11 @@ skills:
   - laravel-verification
   - liquid-glass-design
   - logistics-exception-management
+  - lyric-craft
   - market-research
   - mcp-server-patterns
   - motion-ui
+  - music-mix-master
   - nanoclaw-repl
   - nextjs-turbopack
   - nutrient-document-processing
@@ -145,6 +148,7 @@ skills:
   - springboot-tdd
   - springboot-verification
   - strategic-compact
+  - suno-prompting
   - swift-actor-persistence
   - swift-concurrency-6-2
   - swift-protocol-di-testing

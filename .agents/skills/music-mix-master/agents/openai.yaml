@@ -1,0 +1,7 @@
+interface:
+  display_name: "Music Mix and Master"
+  short_description: "Mix AI stems and master to streaming specs"
+  brand_color: "#34D399"
+  default_prompt: "Use $music-mix-master to remix AI stems and master to -14 LUFS."
+policy:
+  allow_implicit_invocation: true

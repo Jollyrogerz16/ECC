@@ -1,0 +1,7 @@
+interface:
+  display_name: "Lyric Craft"
+  short_description: "Singable lyrics and structure tags for AI vocals"
+  brand_color: "#38BDF8"
+  default_prompt: "Use $lyric-craft to write a tagged, singable lyric sheet."
+policy:
+  allow_implicit_invocation: true

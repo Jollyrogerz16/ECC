@@ -1,6 +1,6 @@
 # Everything Claude Code (ECC) — Agent Instructions
 
-This is a **production-ready AI coding plugin** providing 68 specialized agents, 285 skills, 94 commands, and automated hook workflows for software development.
+This is a **production-ready AI coding plugin** providing 71 specialized agents, 289 skills, 94 commands, and automated hook workflows for software development.
 
 **Version:** 2.2.0
 
@@ -48,6 +48,9 @@ This is a **production-ready AI coding plugin** providing 68 specialized agents,
 | mle-reviewer | Production ML pipeline review | ML pipelines, evals, serving, monitoring, rollback |
 | rag-pipeline-reviewer | RAG pipeline review | Retrieval quality, chunking, reranking, RAGAS evaluation coverage |
 | typescript-reviewer | TypeScript/JavaScript code review | TypeScript/JavaScript projects |
+| music-producer | AI music production and A&R | Suno/Udio finishing, arrangement, take selection |
+| lyricist | Singable lyrics for AI vocals | Hooks, verses, structure tags, scansion |
+| mix-reviewer | Mix and master critique | AI stems, loudness, release-ready bounce |
 
 ## Agent Orchestration
 
@@ -61,6 +64,9 @@ Use agents proactively without user prompt:
 - Autonomous loops / loop monitoring → **loop-operator**
 - Harness config reliability and cost → **harness-optimizer**
 - RAG/retrieval pipeline changes → **rag-pipeline-reviewer**
+- AI music production / Suno finishing → **music-producer**
+- Song lyrics for AI vocals → **lyricist**
+- Mix/master critique on a bounce or stems → **mix-reviewer**
 
 Use parallel execution for independent operations — launch multiple agents simultaneously.
 
@@ -153,8 +159,8 @@ Troubleshoot failures: check test isolation → verify mocks → fix implementat
 ## Project Structure
 
 ```
-agents/          — 68 specialized subagents
-skills/          — 285 workflow skills and domain knowledge
+agents/          — 71 specialized subagents
+skills/          — 289 workflow skills and domain knowledge
 commands/        — 94 slash commands
 hooks/           — Trigger-based automations
 rules/           — Always-follow guidelines (common + per-language)

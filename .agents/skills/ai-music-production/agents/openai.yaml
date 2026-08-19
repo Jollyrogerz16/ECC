@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI Music Production"
+  short_description: "Professional AI music from brief to release"
+  brand_color: "#A78BFA"
+  default_prompt: "Use $ai-music-production to take a Suno demo to a finished record."
+policy:
+  allow_implicit_invocation: true

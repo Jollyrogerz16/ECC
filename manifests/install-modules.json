@@ -696,12 +696,16 @@
     {
       "id": "media-generation",
       "kind": "skills",
-      "description": "Media generation, technical explainers, and AI-assisted editing skills.",
+      "description": "Media generation, AI music production, technical explainers, and AI-assisted editing skills.",
       "paths": [
+        "skills/ai-music-production",
         "skills/blender-motion-state-inspection",
         "skills/fal-ai-media",
+        "skills/lyric-craft",
         "skills/manim-video",
+        "skills/music-mix-master",
         "skills/remotion-video-creation",
+        "skills/suno-prompting",
         "skills/ui-demo",
         "skills/video-editing",
         "skills/videodb",
