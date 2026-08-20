@@ -66,7 +66,9 @@ This document lists each slash command and the primary agent(s) or skills it inv
 | `typescript-reviewer` | TypeScript/JavaScript code review | TypeScript/JavaScript projects | Invoke the agent directly when a review needs TS/JS-specific findings and there is no dedicated slash command yet. |
 | `music-producer` | AI music production and A&R | Suno/Udio finishing, arrangement, selects | Use with `ai-music-production`. No slash command; invoke the agent or the skill. |
 | `lyricist` | Singable lyrics for AI vocals | Hooks, verses, structure tags | Use with `lyric-craft`. |
+| `vocal-producer` | AI and hybrid vocal production | Comps, doubles, ad-libs | Use with `vocal-production`. |
 | `mix-reviewer` | Mix and master critique | AI stems, streaming loudness | Use with `music-mix-master`. |
+| `a-and-r-reviewer` | Playlist skip-test | Song vs vocal vs finish failures | Use after production, before `music-release`. |
 
 ## Skills referenced by commands
 

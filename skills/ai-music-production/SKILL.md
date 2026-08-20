@@ -18,7 +18,7 @@ Do not treat the first generation as the master.
 - User says "produce a song", "make this sound finished", "Suno stems", "AI music", or "master this track"
 - Pairing generation with a DAW (Logic, Ableton, FL Studio, Reaper, Studio One)
 
-Delegate generator-field craft to `suno-prompting`. Delegate lyrics to `lyric-craft`. Delegate mix/master decisions to `music-mix-master`. Delegate the session to `music-producer`, `lyricist`, and `mix-reviewer`.
+Delegate generator-field craft to `suno-prompting`. Delegate lyrics to `lyric-craft`. Delegate section contrast to `music-arrangement`. Delegate vocals to `vocal-production`. Delegate mix/master to `music-mix-master`. Delegate the street-date packet to `music-release`. Delegate the session to `music-producer`, `lyricist`, `vocal-producer`, `mix-reviewer`, and `a-and-r-reviewer`.
 
 ## Core Thesis
 
@@ -32,16 +32,17 @@ Delegate generator-field craft to `suno-prompting`. Delegate lyrics to `lyric-cr
 
 ```
 Brief + references
-  → Arrangement map
+  → Arrangement map (music-arrangement)
   → Lyrics (lyric-craft)
   → Style prompt (suno-prompting)
   → Custom Mode generation (8–20 takes)
   → Selects / Extend / Cover / Replace
+  → A&R skip-test (a-and-r-reviewer)
   → Lock Manual BPM + export WAV stems
-  → DAW remix + human overdubs
+  → DAW remix + vocal production
   → Mix
   → Master to streaming specs
-  → Metadata, legal, release
+  → Release packet (music-release)
 ```
 
 Do not skip layers. Do not ask one tool to do every layer.
@@ -67,7 +68,7 @@ Pick two or three reference tracks and name what you are stealing from each: dru
 
 ## Layer 2: Arrangement Map
 
-Write the song on an 8-bar grid before generating. Suno (and every other model) collapses into a wall of sound when it has no section jobs.
+Write the song on an 8-bar grid before generating. Full density maps and mute-first contrast live in `music-arrangement`. Suno (and every other model) collapses into a wall of sound when it has no section jobs.
 
 | Time (3:00 @ 100 BPM) | Section | Job |
 |---|---|---|
@@ -128,6 +129,7 @@ Import, then treat the session like a band recording that arrived already mixed:
 - Rebuild the balance from silence. Do not leave the AI's stereo image as law.
 - Replace the weakest layer if it is cheaper than repairing it. AI drums and low end fail most often. A real 808, a sampled break, or a played bass guitar will outrun another generation.
 - Add one human thing: a recorded vocal double, a guitar stab, a foley texture, a talk box, a breath. One real sound collapses the "this is AI" tell.
+- Vocal comps, stacks, and drier Covers: `vocal-production`.
 - Check key with a tuner on the vocal or a pitched instrument before overdubbing.
 
 ## Layer 7: Mix and Master
@@ -136,17 +138,19 @@ Follow `music-mix-master`. Streaming target for a pop/electronic single is typic
 
 ## Layer 8: A&R Gate
 
-Play the song in three environments before you mix for release: laptop speaker, phone, car or headphones. Fail the track if any of these are true:
+Delegate the skip-test to `a-and-r-reviewer`. Play the song in three environments before you mix for release: laptop speaker, phone, car or headphones. Fail the track if any of these are true:
 
 - You cannot hum the chorus after one listen
-- Verse and chorus are the same density
+- Verse and chorus are the same density (`music-arrangement`)
 - Lyrics do not land on the beat (see `lyric-craft`)
-- The vocal is a costume, not a person (over-vowel, no consonants, no breaths)
+- The vocal is a costume, not a person (`vocal-production`)
 - The low end is a smear, not a kick and a bass
 - It only sounds expensive in the generator's own player
 - You would skip it at 0:12 if it came on in a playlist you did not make
 
 ## Layer 9: Release
+
+Follow `music-release` for the packet. Short version:
 
 - **Rights:** Commercial use follows the generator's current paid-plan terms. Free-tier generations are usually not release-safe. Read the live ToS; do not invent a license.
 - **Disclosure:** Some stores and collecting societies want AI involvement declared. Put the truth in the metadata even when a checkbox is optional.
@@ -208,9 +212,14 @@ DAW: replace the 808, high-pass guitars at 120 Hz, vocal chain, one recorded bre
 
 - `suno-prompting` — Custom Mode style, tags, Cover/Extend
 - `lyric-craft` — singable lyrics and section tags
+- `music-arrangement` — density map, signature sound, mute-first contrast
+- `vocal-production` — comps, doubles, ad-libs, drier leads
 - `music-mix-master` — stem gain-staging, mix, streaming master
-- `fal-ai-media` — short beds, SFX, trailer audio
+- `music-release` — metadata, disclosure, DSP delivery
+- `fal-ai-media` — short beds, SFX, trailer audio, cover stills
 - `taste` — visual direction once the audio is locked
 - `video-editing` — music video / visualizer assembly
 - `brand-voice` — artist persona that must stay consistent across releases
 - `content-engine` — rollout copy after the master exists
+- `social-publisher` — day-of posts
+- `marketing-campaign` — dated launch, not a quiet upload

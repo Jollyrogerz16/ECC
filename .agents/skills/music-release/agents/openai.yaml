@@ -1,0 +1,7 @@
+interface:
+  display_name: "Music Release"
+  short_description: "Metadata, disclosure, and store delivery packet"
+  brand_color: "#FB7185"
+  default_prompt: "Use $music-release to build the store upload packet."
+policy:
+  allow_implicit_invocation: true

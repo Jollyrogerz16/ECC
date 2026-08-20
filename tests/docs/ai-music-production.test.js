@@ -8,13 +8,18 @@ const SKILLS = [
   'ai-music-production',
   'suno-prompting',
   'lyric-craft',
+  'music-arrangement',
   'music-mix-master',
+  'vocal-production',
+  'music-release',
 ];
 
 const AGENTS = [
   'music-producer',
   'lyricist',
+  'vocal-producer',
   'mix-reviewer',
+  'a-and-r-reviewer',
 ];
 
 function test(name, fn) {
@@ -94,6 +99,27 @@ function runTests() {
     assert.ok(/scan/i.test(body), 'lyric-craft missing: scan');
   })) passed++; else failed++;
 
+  if (test('arrangement skill requires density contrast and mute-first edits', () => {
+    const body = read('skills/music-arrangement/SKILL.md');
+    assert.ok(/density/i.test(body), 'music-arrangement missing density');
+    assert.ok(/signature sound/i.test(body), 'music-arrangement missing signature sound');
+    assert.ok(/mute/i.test(body), 'music-arrangement missing mute-first');
+  })) passed++; else failed++;
+
+  if (test('vocal skill treats consonants and comps as the anti-AI tell', () => {
+    const body = read('skills/vocal-production/SKILL.md');
+    assert.ok(/consonant/i.test(body), 'vocal-production missing consonants');
+    assert.ok(/comp/i.test(body), 'vocal-production missing comp');
+    assert.ok(/double/i.test(body), 'vocal-production missing doubles');
+  })) passed++; else failed++;
+
+  if (test('release skill requires disclosure and a master that is not a social clip', () => {
+    const body = read('skills/music-release/SKILL.md');
+    assert.ok(/ISRC/i.test(body), 'music-release missing ISRC');
+    assert.ok(/disclosure/i.test(body), 'music-release missing disclosure');
+    assert.ok(/do not invent a license/i.test(body), 'music-release must not invent licenses');
+  })) passed++; else failed++;
+
   if (test('mix skill treats AI stems as pre-processed and rebuilds the balance', () => {
     const body = read('skills/music-mix-master/SKILL.md');
     for (const marker of ['gain stag', 'high-pass', '-14 LUFS', 'true peak', 'baked']) {
@@ -155,13 +181,19 @@ function runTests() {
       'skills/suno-prompting/SKILL.md',
       'skills/lyric-craft/SKILL.md',
       'skills/music-mix-master/SKILL.md',
+      'skills/music-arrangement/SKILL.md',
+      'skills/vocal-production/SKILL.md',
+      'skills/music-release/SKILL.md',
       'skills/fal-ai-media/SKILL.md',
       'skills/video-editing/SKILL.md',
       'skills/taste/SKILL.md',
       'skills/brand-voice/SKILL.md',
+      'skills/content-engine/SKILL.md',
       'agents/music-producer.md',
       'agents/lyricist.md',
+      'agents/vocal-producer.md',
       'agents/mix-reviewer.md',
+      'agents/a-and-r-reviewer.md',
     ];
     for (const ref of refs) {
       assert.ok(fs.existsSync(path.join(ROOT, ref)), `unresolved reference: ${ref}`);

@@ -191,6 +191,8 @@ More genre axes live in `references/style-vocab.md` when the brief is stuck.
 
 - `ai-music-production` — full pipeline, Studio, stems, release
 - `lyric-craft` — singable lyrics and tag blocks
+- `music-arrangement` — when the generation is a wall of sound
+- `vocal-production` — drier Covers and lead character
 - `music-mix-master` — what happens after export
 - `fal-ai-media` — non-Suno beds and SFX
 - `brand-voice` — artist persona across a body of work

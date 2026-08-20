@@ -216,6 +216,8 @@ When a generated vocal fails a line:
 
 - `ai-music-production` — where lyrics sit in the release pipeline
 - `suno-prompting` — style field and iteration tools
+- `music-arrangement` — section jobs the lyric must match
+- `vocal-production` — when the line scans but the take slurs
 - `brand-voice` — consistent artist persona
 - `article-writing` — do not use this for lyrics; different object
 - `content-engine` — rollout copy after the song exists

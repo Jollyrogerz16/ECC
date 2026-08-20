@@ -1,0 +1,7 @@
+interface:
+  display_name: "Vocal Production"
+  short_description: "Comps, doubles, and consonants for AI vocals"
+  brand_color: "#22D3EE"
+  default_prompt: "Use $vocal-production to make the lead sound like a person."
+policy:
+  allow_implicit_invocation: true

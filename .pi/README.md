@@ -22,7 +22,7 @@ This adapter contains **only the integration logic**. No copies, no duplication.
   `additionalContext` is folded into Pi's system prompt for the next turn
 - **`/ecc-doctor`** — diagnostic command to verify the integration
 
-Verified against Pi 0.84.1: a global install exposes 289 skills and 94 commands, resolved
+Verified against Pi 0.84.1: a global install exposes 292 skills and 94 commands, resolved
 directly from `skills/` and `commands/`, with no generated copies.
 
 ## Installation

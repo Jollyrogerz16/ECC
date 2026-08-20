@@ -155,5 +155,8 @@ Read `input_i` and `input_tp`. If input already is −8 LUFS, the mix was limite
 - `ai-music-production` — pipeline, Studio export, A&R gate
 - `suno-prompting` — when the stem density is a prompt problem
 - `lyric-craft` — unintelligible words are sometimes a lyric problem
+- `vocal-production` — lead chain before the mix bus
+- `music-arrangement` — mute decisions before extra EQ
+- `music-release` — the file you upload after this master
 - `video-editing` — loudness of the audio under a visual
 - `taste` — music video after the master is locked

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Music Arrangement"
+  short_description: "Density maps, contrast, and mute-first structure"
+  brand_color: "#F472B6"
+  default_prompt: "Use $music-arrangement to give verse and chorus different jobs."
+policy:
+  allow_implicit_invocation: true

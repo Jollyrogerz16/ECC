@@ -703,12 +703,15 @@
         "skills/fal-ai-media",
         "skills/lyric-craft",
         "skills/manim-video",
+        "skills/music-arrangement",
         "skills/music-mix-master",
+        "skills/music-release",
         "skills/remotion-video-creation",
         "skills/suno-prompting",
         "skills/ui-demo",
         "skills/video-editing",
         "skills/videodb",
+        "skills/vocal-production",
         "skills/taste"
       ],
       "targets": [
